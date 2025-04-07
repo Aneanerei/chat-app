@@ -11,17 +11,10 @@ class RoomsController < ApplicationController
       render :new, status: :unprocessable_entity
     end
   end
-  
+
   private
 
   def room_params
     params.require(:room).permit(:name, user_ids: [])
   end
-  
-  def index
-  end
-
-
-
-
 end
