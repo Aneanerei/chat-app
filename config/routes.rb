@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
  resources :rooms, only: [:new, :create, :show, :index, :edit, :update, :destroy]  # 必要なアクションを追加
  resources :messages, only: [:new, :create, :show, :index, :edit, :update, :destroy]  # 必要なアクションを追加
+#  resources :users, only: [:new, :create, :show, :index, :edit, :update, :destroy]  # 必要なアクションを追加
 
  devise_for :users
 
